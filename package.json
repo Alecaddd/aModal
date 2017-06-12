@@ -1,0 +1,46 @@
+{
+	"name": "aModal",
+	"version": "1.0.0",
+	"description": "Super lightweight and dependency free Modal built in ES6",
+	"author": "Alessandro Castellani <castellani.ale@gmail.com> (http://alecaddd.com)",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/alecaddd/amodal"
+	},
+	"main": "dist/index.js",
+	"keywords": [
+		"modal",
+		"ecmascript",
+		"css3",
+		"es6",
+		"es2015"
+	],
+	"devDependencies": {
+		"babel-preset-es2015": "^6.24.1",
+		"babelify": "^7.3.0",
+		"browser-sync": "^2.11.1",
+		"browserify": "^14.1.1",
+		"browserify-shim": "^3.8.14",
+		"gulp": "^3.9.1",
+		"gulp-autoprefixer": "^3.1.1",
+		"gulp-concat": "^2.5.2",
+		"gulp-if": "^2.0.2",
+		"gulp-notify": "^3.0.0",
+		"gulp-options": "^1.1.1",
+		"gulp-plumber": "^1.1.0",
+		"gulp-rename": "^1.2.0",
+		"gulp-sass": "^3.1.0",
+		"gulp-sourcemaps": "^2.6.0",
+		"gulp-strip-debug": "^1.1.0",
+		"gulp-uglify": "^2.0.0",
+		"gulp-uglifycss": "^1.0.4",
+		"vinyl-buffer": "^1.0.0",
+		"vinyl-source-stream": "^1.1.0"
+	},
+	"babel": {
+		"presets": [
+			"es2015"
+		]
+	},
+	"license": "MIT"
+}

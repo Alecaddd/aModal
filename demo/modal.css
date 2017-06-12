@@ -1,0 +1,120 @@
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.modal-body {
+	overflow: hidden;
+	position: relative;
+}
+
+.modal-body::before {
+	position: fixed;
+	display: block;
+	content: '';
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	background-color: rgba(0, 0, 0, 0.75);
+	z-index: 10;
+	animation: fadeIn 320ms ease;
+	-webkit-transition: opacity 320ms ease;
+	-moz-transition: opacity 320ms ease;
+	-ms-transition: opacity 320ms ease;
+	-o-transition: opacity 320ms ease;
+	transition: opacity 320ms ease;
+}
+
+.modal-body.modal-fadeOut::before {
+	opacity: 0;
+}
+
+.modal {
+	-webkit-transition: all 0.01s ease;
+	-moz-transition: all 0.01s ease;
+	-ms-transition: all 0.01s ease;
+	-o-transition: all 0.01s ease;
+	transition: all 0.01s ease;
+	display: block;
+	opacity: 0;
+	height: 0;
+	position: fixed;
+	content: '';
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	text-align: center;
+	overflow: hidden;
+	overflow-y: auto;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
+}
+
+.modal.modal-visible {
+	opacity: 1;
+	height: auto;
+	bottom: 0;
+}
+
+.modal-inner {
+	-webkit-transition: all 320ms ease;
+	-moz-transition: all 320ms ease;
+	-ms-transition: all 320ms ease;
+	-o-transition: all 320ms ease;
+	transition: all 320ms ease;
+	-webkit-transform: translateY(-50px);
+	-moz-transform: translateY(-50px);
+	-ms-transform: translateY(-50px);
+	-o-transform: translateY(-50px);
+	transform: translateY(-50px);
+	position: relative;
+	display: inline-block;
+	background-color: #fff;
+	width: 90%;
+	max-width: 600px;
+	background: #fff;
+	opacity: 0;
+	margin: 40px 0;
+	border-radius: 4px;
+	box-shadow: 0 30px 18px -20px rgb(2, 2, 2);
+}
+
+.modal-inner.modal-reveal {
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	-o-transform: translateY(0px);
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+.js-close-modal {
+	color: #fff;
+	position: absolute;
+	z-index: 2;
+	right: -35px;
+	top: 0px;
+	width: 30px;
+	height: 30px;
+	line-height: 33px;
+	font-size: 20px;
+	cursor: pointer;
+	text-align: center;
+}

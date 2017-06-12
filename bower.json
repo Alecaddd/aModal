@@ -1,0 +1,24 @@
+{
+	"name": "aModal",
+	"description": "Super lightweight and dependency free Modal built in ES6",
+	"main": "dist/index.js",
+	"authors": [
+		"Alessandro Castellani <castellani.ale@gmail.com>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"modal",
+		"ecmascript",
+		"css3",
+		"es6",
+		"es2015"
+	],
+	"homepage": "https://github.com/alecaddd/amodal",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
+}
