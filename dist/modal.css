@@ -106,15 +106,25 @@
 }
 
 .js-close-modal {
-	color: #fff;
+	-webkit-transition: color 320ms ease;
+	-moz-transition: color 320ms ease;
+	-ms-transition: color 320ms ease;
+	-o-transition: color 320ms ease;
+	transition: color 320ms ease;
+	color: #9e9e9e;
+	opacity: 0.75;
 	position: absolute;
 	z-index: 2;
-	right: -35px;
+	right: 0px;
 	top: 0px;
 	width: 30px;
 	height: 30px;
-	line-height: 33px;
+	line-height: 30px;
 	font-size: 20px;
 	cursor: pointer;
 	text-align: center;
+}
+
+.js-close-modal:hover {
+	color: #000;
 }
