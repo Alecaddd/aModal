@@ -1,5 +1,5 @@
 {
-	"name": "aModal",
+	"name": "amodal",
 	"description": "Super lightweight and dependency free Modal built in ES6",
 	"main": "dist/index.js",
 	"authors": [
