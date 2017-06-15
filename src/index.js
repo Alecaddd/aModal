@@ -14,19 +14,19 @@ class Modal {
 	listeners() {
 		window.addEventListener( 'keydown', this.keyDown );
 
-		this.triggers.forEach( ( el ) => {
+		this.triggers.forEach( el => {
 			el.addEventListener( 'click', this.openModal, false );
 		} );
 
-		this.modals.forEach( ( el ) => {
+		this.modals.forEach( el => {
 			el.addEventListener( 'transitionend', this.revealModal, false );
 		} );
 
-		this.close.forEach( ( el ) => {
+		this.close.forEach( el => {
 			el.addEventListener( 'click', Modal.hideModal, false );
 		} );
 
-		this.modalInners.forEach( ( el ) => {
+		this.modalInners.forEach( el => {
 			el.addEventListener( 'transitionend', this.closeModal, false );
 		} );
 	}
