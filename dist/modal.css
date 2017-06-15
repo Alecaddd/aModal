@@ -63,7 +63,6 @@
 	text-align: center;
 	overflow: hidden;
 	overflow-y: auto;
-	white-space: nowrap;
 	-webkit-overflow-scrolling: touch;
 }
 
