@@ -22,7 +22,7 @@ var jsSRC        = './src/';
 var jsFront      = 'index.js';
 var jsFiles      = [ jsFront ];
 var jsURL        = './dist/';
-var jsWatch      = './dist/*.js';
+var jsWatch      = './src/*.js';
 
 // Tasks
 gulp.task( 'js', function() {
@@ -48,7 +48,7 @@ gulp.task( 'js', function() {
  });
 
  gulp.task( 'watch', ['default'], function() {
-    gulp.watch( jsWatch, [ 'js', reload ] );
+    gulp.watch( jsWatch, [ 'js' ] );
     gulp.src( jsURL + 'index.js' )
         .pipe( notify({ message: 'Gulp is Watching, Happy Coding!' }) );
  });
