@@ -65,6 +65,13 @@ Be sure to include or import the default style
 </div><!-- .modal -->
 ```
 
+* Backdrop Support
+By default, the Modal will automatically close if a click is registered on the backdrop dark overlay area underneath an open modal. You can control this behaviour by setting a boolean data attribute to your modal container.
+
+```html
+	<div id="modal-1" class="modal" data-backdrop="false">
+```
+
 ## Trigger the Modal
 
 ```html
