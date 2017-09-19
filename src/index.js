@@ -20,6 +20,7 @@ class Modal {
 
 		this.modals.forEach( el => {
 			el.addEventListener( 'transitionend', this.revealModal, false );
+			el.addEventListener( 'click', this.backdropClose, false );
 		} );
 
 		this.close.forEach( el => {
@@ -33,6 +34,18 @@ class Modal {
 
 	keyDown( e ) {
 		if ( 27 === e.keyCode && document.body.classList.contains( 'modal-body' ) ) {
+			Modal.hideModal();
+		}
+	}
+
+	backdropClose( el ) {
+		if ( ! el.target.classList.contains( 'modal-visible' ) ) {
+			return;
+		}
+
+		let backdrop =  el.currentTarget.dataset.backdrop !== undefined ? el.currentTarget.dataset.backdrop : true ;
+
+		if ( backdrop === true ) {
 			Modal.hideModal();
 		}
 	}
